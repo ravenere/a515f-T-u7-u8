@@ -1154,8 +1154,8 @@ static int register_dm_callback(struct exynos_cpufreq_domain *domain)
 }
 
 /*physwizz underclocking*/
-/*Underclocking little cores to 403MHz*/
-static unsigned long arg_cpu_min_c1 =403000; 
+/*Underclocking little cores to 600MHz*/
+static unsigned long arg_cpu_min_c1 =600000; 
 static int __init cpufreq_read_cpu_min_c1(char *cpu_min_c1) /*integer remains in memory after function call*/
 {
 	unsigned long ui_khz;
@@ -1191,8 +1191,8 @@ __setup("cpu_min_c2=", cpufreq_read_cpu_min_c2);
 
 
 /*from Carlos Burelo*/
-/*Overclocking little cores to 2.054GHz*/
-static unsigned long arg_cpu_max_c1 = 2054000; /*max_cpu_freq=2.054 GHz for little cores*/
+/*Overclocking little cores to 1.742GHz*/
+static unsigned long arg_cpu_max_c1 = 1742000; /*max_cpu_freq=1.742 GHz for little cores*/
 
 static int __init cpufreq_read_cpu_max_c1(char *cpu_max_c1) /*integer remains in memory after function call*/
 {
@@ -1209,8 +1209,8 @@ static int __init cpufreq_read_cpu_max_c1(char *cpu_max_c1) /*integer remains in
 }
 __setup("cpu_max_c1=", cpufreq_read_cpu_max_c1);
 
-/*Overclocking big cores to 2.314GHz*/
-unsigned long arg_cpu_max_c2 = 2314000; /*max_cpu_freq=2.314 GHz*/
+/*Overclocking big cores to 2.6Hz*/
+unsigned long arg_cpu_max_c2 = 2600000; /*max_cpu_freq=2.6 GHz*/
 
 static __init int cpufreq_read_cpu_max_c2(char *cpu_max_c2)
 {
