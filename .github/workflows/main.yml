@@ -12,7 +12,7 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/ravenere/a515f-T-u7-u8
-          kernel-branch: taffy
+          kernel-branch: sukisu-try1
           config: exynos9610-a51xx_defconfig
           arch: arm64
           aosp-gcc: true
